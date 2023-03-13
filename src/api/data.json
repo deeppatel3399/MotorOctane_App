@@ -1,0 +1,891 @@
+{
+    "VEHICLEDATA":
+    [
+        {
+
+        "Hyundai":
+        [
+            {
+                "id":"1",
+                "carname":"Hyundai Venue",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/141113/venue-exterior-right-front-three-quarter.jpeg?isig=0&q=75",
+                "price":"₹ 8.52 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"17.5 to 23.4 kmpl",
+                "engine":"998 to 1493 cc",
+                "transmission":"Manual, Clutchless Manual (IMT) & Automatic (DCT)",
+                "fueltype":"Petrol & Diesel",
+                "seatingcapacity":"5 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"16.75 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Petrol(1197 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"17.8 kmpl",
+                        "varient":"Clutchless Manual (IMT)",
+                        "fueltype":"Petrol(998 cc)"
+                    },
+                    {
+                        "id":"3",
+                        "kmpl":"23.4 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Diesel(1493 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"red",
+                        "colorname":"chilli red"
+                    }
+                ]
+
+            },
+            {
+                "id":"2",
+                "carname":"Hyundai Verna",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/41197/hyundai-verna-right-front-three-quarter7.jpeg?q=75",
+                "price":"₹ 10.61 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"17.7 to 25 kmpl",
+                "engine":"998 to 1497 cc",
+                "transmission":"Manual, Automatic (CVT), Automatic (TC) & Automatic (DCT)",
+                "fueltype":"Petrol & Diesel",
+                "seatingcapacity":"5 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"17.62 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Petrol(1497 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"19.67 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Diesel(1493 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"black",
+                        "colorname":"Phantom Black"
+                    },
+                    {
+                        "id":"2",
+                        "color":"white",
+                        "colorname":"Polar White"
+                    },
+                    {
+                        "id":"3",
+                        "color":"red",
+                        "colorname":"Fiery Red"
+                    }
+                ]
+
+            },
+            {
+                "id":"3",
+                "carname":"Hyundai i20 N Line",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/100121/i20-n-line-exterior-right-front-three-quarter-12.jpeg?isig=0&q=75",
+                "price":"₹ 11.27 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"20.2 kmpl",
+                "engine":"998 cc",
+                "transmission":"Clutchless Manual (IMT) & Automatic (DCT)",
+                "fueltype":"Petrol",
+                "seatingcapacity":"5 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"20.2 kmpl",
+                        "varient":"Clutchless Manual (IMT)",
+                        "fueltype":"Petrol(998 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"20.2 kmpl",
+                        "varient":"Automatic (DCT)",
+                        "fueltype":"Petrol(998 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"blue",
+                        "colorname":"blue"
+                    },
+                    {
+                        "id":"2",
+                        "color":"red",
+                        "colorname":"Fiery Red"
+                    },
+                    {
+                        "id":"3",
+                        "color":"white",
+                        "colorname":"Pearl White"
+                    }
+                ]
+
+            }
+        ],
+        "Suzuki":
+        [
+            {
+                "id":"1",
+                "carname":"Maruti Brezza",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/107543/vitara-brezza-2022-exterior-right-front-three-quarter.jpeg?isig=0&q=75",
+                "price":"₹ 9.05 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"19.8 to 19.9 kmpl",
+                "engine":"1462 cc",
+                "transmission":"Manual & Automatic (TC)",
+                "fueltype":"Petrol & CNG",
+                "seatingcapacity":"5 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"19.9 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Petrol(1462 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"19.8 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Petrol(1462 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"red",
+                        "colorname":"Sizzling Red"
+                    },
+                    {
+                        "id":"2",
+                        "color":"khaki",
+                        "colorname":"Brave Khaki"
+                    },
+                    {
+                        "id":"3",
+                        "color":"blue",
+                        "colorname":"Exuberant blue"
+                    }
+                ]
+            },
+            {
+                "id":"2",
+                "carname":"Maruti Grand Vitara",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/123185/grand-vitara-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75",
+                "price":"₹ 11.59 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"20.58 to 27.97 kmpl",
+                "engine":"1462 to 1490 cc",
+                "transmission":"Manual, Automatic (TC) & Automatic (CVT)",
+                "fueltype":"Mild Hybrid(Electric + Petrol), CNG & Hybrid (Electric + Petrol)",
+                "seatingcapacity":"5 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"20.62 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Mild Hybrid(Electric + Petrol)(1462 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"26.6 km/kg",
+                        "varient":"Manual",
+                        "fueltype":"CNG(1462 cc)"
+                    },
+                    {
+                        "id":"3",
+                        "kmpl":"0.58 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Mild Hybrid(Electric + Petrol)(1462 cc)"
+                    },
+                    {
+                        "id":"4",
+                        "kmpl":"27.97 kmpl",
+                        "varient":"Automatic (CVT)",
+                        "fueltype":"Hybrid (Electric + Petrol)(1490 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"blue",
+                        "colorname":"Nexa Blue"
+                    },
+                    {
+                        "id":"2",
+                        "color":"white",
+                        "colorname":"Arctic White"
+                    },
+                    {
+                        "id":"3",
+                        "color":"silver",
+                        "colorname":"Splendid Silver"
+                    }
+                ]
+            },
+            {
+                "id":"3",
+                "carname":"Maruti Swift",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/54399/exterior-right-front-three-quarter-10.jpeg?q=75",
+                "price":"₹ 6.70 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"22.38 to 30.9 km/kg",
+                "engine":"1197 cc",
+                "transmission":"Manual & Automatic (AMT)",
+                "fueltype":"Petrol & CNG",
+                "seatingcapacity":"5 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"30.9 km/kg",
+                        "varient":"Manual",
+                        "fueltype":"CNG(1197 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"22.56 kmpl",
+                        "varient":"Automatic (AMT)",
+                        "fueltype":"Petrol(1197 cc)"
+                    },
+                    {
+                        "id":"3",
+                        "kmpl":"22.38 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Petrol(1197 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"red",
+                        "colorname":"Solid Fire Red with Pearl Midnight Black Roof"
+                    },
+                    {
+                        "id":"2",
+                        "color":"white",
+                        "colorname":"Pearl Arctic White with Pearl Midnight Black Roof"
+                    },
+                    {
+                        "id":"3",
+                        "color":"orange",
+                        "colorname":"Pearl Metallic Lucent Orange"
+                    }
+                ]
+
+            }
+        ],
+        "Tata":
+        [
+            {
+                "id":"1",
+                "carname":"Tata Nexon",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/41645/tata-nexon-right-front-three-quarter3.jpeg?q=75",
+                "price":"₹ 8.65 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"16.3 to 22 kmpl",
+                "engine":"1199 to 1497 cc",
+                "transmission":"Manual & Automatic (AMT)",
+                "fueltype":"Petrol, Diesel & CNG",
+                "seatingcapacity":"5 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"17.5 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Petrol(1199 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"16.3 kmpl",
+                        "varient":"Automatic (AMT)",
+                        "fueltype":"Petrol(1199 cc)"
+                    },
+                    {
+                        "id":"3",
+                        "kmpl":"21.1 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Diesel(1497 cc)"
+                    },
+                    {
+                        "id":"4",
+                        "kmpl":"22 kmpl",
+                        "varient":"Automatic (AMT)",
+                        "fueltype":"Diesel(1497 cc)"
+                    },
+                    {
+                        "id":"5",
+                        "kmpl":"16.3 kmpl",
+                        "varient":"Automatic (AMT)",
+                        "fueltype":"Diesel(1199 cc)"
+                    },
+                    {
+                        "id":"6",
+                        "kmpl":"17.5 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Diesel(1199 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"green",
+                        "colorname":"Foliage Green"
+                    },
+                    {
+                        "id":"2",
+                        "color":"red",
+                        "colorname":"Flame Red"
+                    },
+                    {
+                        "id":"3",
+                        "color":"grey",
+                        "colorname":"Daytona Grey"
+                    }
+                ]
+
+            },
+            {
+                "id":"2",
+                "carname":"Tata Punch",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/39015/punch-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75",
+                "price":"₹ 6.70 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"18.8 to 18.9 kmpl",
+                "engine":"1199 cc",
+                "transmission":"Manual & Automatic (AMT)",
+                "fueltype":"Petrol & CNG",
+                "seatingcapacity":"5 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"18.9 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Petrol(1199 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"18.8 kmpl",
+                        "varient":"Automatic (AMT)",
+                        "fueltype":"Petrol(1199 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"blue",
+                        "colorname":"Tornado Blue With White Roof"
+                    },
+                    {
+                        "id":"2",
+                        "color":"red",
+                        "colorname":"Calypso Red With White Roof"
+                    },
+                    {
+                        "id":"3",
+                        "color":"bronze",
+                        "colorname":"Meteor Bronze With Black Roof"
+                    }
+                ]
+
+            },
+            {
+                "id":"3",
+                "carname":"Tata Harrier",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/142739/harrier-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75",
+                "price":"₹ 17.03 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"14.61 to 16.31 kmpl",
+                "engine":"1956 cc",
+                "transmission":"Manual & Automatic (TC)",
+                "fueltype":"Diesel",
+                "seatingcapacity":"5 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"16.31 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Diesel(1956 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"14.61 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Diesel(1956 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"white",
+                        "colorname":"Orcus White"
+                    },
+                    {
+                        "id":"2",
+                        "color":"red",
+                        "colorname":"Calypso Red"
+                    },
+                    {
+                        "id":"3",
+                        "color":"grey",
+                        "colorname":"Daytona Grey"
+                    }
+                ]
+            }
+        ],
+        "Mahindra":
+        [
+            {
+                "id":"1",
+                "carname":"Mahindra Thar",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/40087/thar-exterior-right-front-three-quarter-11.jpeg?q=75",
+                "price":"₹ 11.24 Lakh",
+                "brandNo":"1800202990230",
+                "mileage":"10.2 kmpl",
+                "engine":"1497 to 2184 cc",
+                "transmission":"Manual & Automatic (TC)",
+                "fueltype":"Diesel & Petrol",
+                "seatingcapacity":"4 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"14.5 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Diesel(1497 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"12 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Petrol(1997 cc)"
+                    },
+                    {
+                        "id":"3",
+                        "kmpl":"14 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Petrol(1997 cc)"
+                    },
+                    {
+                        "id":"4",
+                        "kmpl":"14.65 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Diesel(2184 cc)"
+                    },
+                    {
+                        "id":"5",
+                        "kmpl":"14.5 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Diesel(2184 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"red",
+                        "colorname":"Red Rage"
+                    },
+                    {
+                        "id":"2",
+                        "color":"grey",
+                        "colorname":"Galaxy Grey"
+                    },
+                    {
+                        "id":"3",
+                        "color":"black",
+                        "colorname":"Napoli Black"
+                    }
+                ]
+            },
+            {
+                "id":"2",
+                "carname":"Mahindra Scorpio",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/128413/scorpio-exterior-right-front-three-quarter-46.jpeg?isig=0&q=75",
+                "price":"₹ 14.42 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"15 kmpl",
+                "engine":"2184 cc",
+                "transmission":"Manual",
+                "fueltype":"Diesel",
+                "seatingcapacity":"7 & 9 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"15 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Diesel(2184 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"black",
+                        "colorname":"Napoli Black"
+                    },
+                    {
+                        "id":"2",
+                        "color":"white",
+                        "colorname":"Pearl White"
+                    },
+                    {
+                        "id":"3",
+                        "color":"red",
+                        "colorname":"Molten Red Rage"
+                    }
+
+                ]
+            },
+            {
+                "id":"3",
+                "carname":"Mahindra Scorpio N",
+                "carposter":"https://imgd.aeplcdn.com/1056x594/n/cw/ec/40432/scorpio-n-exterior-right-front-three-quarter-15.jpeg?isig=0&q=75&wm=1",
+                "price":"₹ 14.27 Lakh",
+                "brandNo":"1800202990230",
+                "mileage":"14.5 kmpl",
+                "engine":"1997 to 2184 cc",
+                "transmission":"Manual & Automatic (TC)",
+                "fueltype":"Petrol & Diesel",
+                "seatingcapacity":"6 & 7 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"14.5",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Diesel"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"10.5",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Petrol"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"",
+                        "color":"",
+                        "colorname":""
+                    }
+                ]
+
+            }
+        ],
+        "BMW":
+        [
+            {
+                "id":"1",
+                "carname":"BMW X1",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/140591/new-x1-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75",
+                "price":"₹ 50.25 Lakh",
+                "brandNo":"9884822068",
+                "mileage":"20.3 kmpl",
+                "engine":"1499 to 1995 cc",
+                "transmission":"7-speed automatic",
+                "fueltype":"Petrol & Diesel",
+                "seatingcapacity":"5 seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"20.3 kmpl",
+                        "varient":"Automatic (DCT)",
+                        "fueltype":"Diesel(1995 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"16.3 kmpl",
+                        "varient":"Automatic (DCT)",
+                        "fueltype":"Petrol(1499 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"white",
+                        "colorname":"Alpine White"
+                    },
+                    {
+                        "id":"2",
+                        "color":"black",
+                        "colorname":"Black Sapphire Metallic"
+                    },
+                    {
+                        "id":"3",
+                        "color":"blue",
+                        "colorname":"M Portimao Blue Metallic"
+                    }
+                ]
+
+            },
+            {
+                "id":"2",
+                "carname":"BMW 3 Series",
+                "carposter":"https://imgd.aeplcdn.com/664x374/cw/ec/37067/BMW-3-Series-Exterior-167583.jpg?wm=0&q=75",
+                "price":"₹ 78.77 Lakh",
+                "brandNo":"9884822068",
+                "mileage":"14.3 kmpl",
+                "engine":"1998 to 2998 cc",
+                "transmission":"8-speed automatic",
+                "fueltype":"Petrol & Diesel",
+                "seatingcapacity":"5 seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"20.3 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Diesel(1995 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"16.1 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Petrol(1998 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"white",
+                        "colorname":"Alpine White"
+                    },
+                    {
+                        "id":"2",
+                        "color":"black",
+                        "colorname":"Black Sapphire Metallic"
+                    },
+                    {
+                        "id":"3",
+                        "color":"grey",
+                        "colorname":"Mineral Grey Metallic"
+                    }
+                ]
+
+            },
+            {
+                "id":"3",
+                "carname":"BMW Z4",
+                "carposter":"https://imgd.aeplcdn.com/664x374/cw/ec/37095/BMW-Z4-Roadster-Right-Front-Three-Quarter-153914.jpg?wm=0&q=75",
+                "price":"₹ 78.77 Lakh",
+                "brandNo":"9884822068",
+                "mileage":"14.3 kmpl",
+                "engine":"1998 to 2998 cc",
+                "transmission":"8-speed automatic",
+                "fueltype":"Petrol",
+                "seatingcapacity":"2 seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"14.3 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Petrol(1998 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"11.2 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Petrol(2998 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"white",
+                        "colorname":"Alpine White"
+                    },
+                    {
+                        "id":"2",
+                        "color":"black",
+                        "colorname":"Black Sapphire Metallic"
+                    },
+                    {
+                        "id":"3",
+                        "color":"red",
+                        "colorname":"San Francisco Red Metallic"
+                    }
+                ]
+
+            }
+        ],
+        "Toyota":
+        [
+            {
+                "id":"1",
+                "carname":"Toyota Innova Hycross",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/115025/innova-hycross-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75",
+                "price":"₹ 20.63 Lakh",
+                "brandNo":"",
+                "mileage":"16.13 to 23.24 kmpl",
+                "engine":"1987 cc",
+                "transmission":"Automatic (CVT) & Automatic (EV/Hybrid)",
+                "fueltype":"Petrol & Hybrid (Electric + Petrol)",
+                "seatingcapacity":"7 & 8 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"23.24 kmpl",
+                        "varient":"Automatic (EV/Hybrid)",
+                        "fueltype":"Hybrid (Electric + Petrol)(1987 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"16.13 kmpl",
+                        "varient":"Automatic (CVT)",
+                        "fueltype":"Petrol(1987 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"white",
+                        "colorname":"Platinum White Pearl"
+                    },
+                    {
+                        "id":"2",
+                        "color":"black",
+                        "colorname":"Sparkling Black Pearl Crystal Shine"
+                    },
+                    {
+                        "id":"3",
+                        "color":"silver",
+                        "colorname":"Silver Metallic"
+                    }
+                ]
+
+            },
+            {
+                "id":"2",
+                "carname":"Toyota Fortuner",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-19.jpeg?q=75",
+                "price":"₹ 36.03 Lakh",
+                "brandNo":"",
+                "mileage":"10 to 14.4 kmpl",
+                "engine":"2694 to 2755 cc",
+                "transmission":"Manual & Automatic (TC)",
+                "fueltype":"Petrol & Diesel",
+                "seatingcapacity":"7 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"10 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Petrol(2694 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"10.3 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Petrol(2694 cc)"
+                    },
+                    {
+                        "id":"3",
+                        "kmpl":"14.4 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Diesel(2755 cc)"
+                    },
+                    {
+                        "id":"4",
+                        "kmpl":"14.27 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Diesel(2755 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"black",
+                        "colorname":"Sparkling Black Cystal Shine"
+                    },
+                    {
+                        "id":"2",
+                        "color":"brown",
+                        "colorname":"Phantom Brown"
+                    },
+                    {
+                        "id":"3",
+                        "color":"white",
+                        "colorname":"Super White"
+                    }
+                ]
+
+            },
+            {
+                "id":"3",
+                "carname":"Toyota Urban Cruiser Hyryder",
+                "carposter":"https://imgd.aeplcdn.com/664x374/n/cw/ec/124027/urban-cruiser-hyryder-exterior-right-front-three-quarter-3.jpeg?isig=0&q=75",
+                "price":"₹ 11.62 Lakh",
+                "brandNo":"18002090230",
+                "mileage":"19.39 to 27.97 kmpl",
+                "engine":"1462 to 1490 cc",
+                "transmission":"Manual, Automatic (TC) & Automatic (CVT)",
+                "fueltype":"Mild Hybrid(Electric + Petrol), CNG & Hybrid (Electric + Petrol)",
+                "seatingcapacity":"5 Seater",
+                "mileages":[
+                    {
+                        "id":"1",
+                        "kmpl":"21.12 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Mild Hybrid(Electric + Petrol)(1462 cc)"
+                    },
+                    {
+                        "id":"2",
+                        "kmpl":"26.6 km/kg",
+                        "varient":"Manual",
+                        "fueltype":"CNG(1462 cc)"
+                    },
+                    {
+                        "id":"3",
+                        "kmpl":"20.58 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Mild Hybrid(Electric + Petrol)(1462 cc)"
+                    },
+                    {
+                        "id":"4",
+                        "kmpl":"27.97 kmpl",
+                        "varient":"Automatic (CVT)",
+                        "fueltype":"Hybrid (Electric + Petrol)(1490 cc)"
+                    },
+                    {
+                        "id":"5",
+                        "kmpl":"20.58 kmpl",
+                        "varient":"Automatic (TC)",
+                        "fueltype":"Hybrid (Electric + Petrol)(1462 cc)"
+                    },
+                    {
+                        "id":"6",
+                        "kmpl":"19.39 kmpl",
+                        "varient":"Manual",
+                        "fueltype":"Hybrid (Electric + Petrol)(1462 cc)"
+                    }
+                ],
+                "colour":[
+                    {
+                        "id":"1",
+                        "color":"white",
+                        "colorname":"Cafe White"
+                    },
+                    {
+                        "id":"2",
+                        "color":"grey",
+                        "colorname":"Gaming Grey"
+                    },
+                    {
+                        "id":"3",
+                        "color":"red",
+                        "colorname":"Sporting Red"
+                    }
+                ]
+
+            }
+        ]
+
+        }
+    ]
+}
