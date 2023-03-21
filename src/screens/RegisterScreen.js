@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Pressable } from 'react-native';
 import axios from 'axios';
 
 const RegisterScreen = ({navigation}) => {
@@ -170,12 +170,12 @@ const RegisterScreen = ({navigation}) => {
 
         <Text style={styles.inputheading}>Password</Text>
         <TextInput style={styles.inputbox}
-        placeholder='Enter Password' onChange={(e)=>setPassword(e.target.value)} onBlur={passblur}/>
+        placeholder='Enter Password' secureTextEntry={true} onChange={(e)=>setPassword(e.target.value)} onBlur={passblur}/>
         <Text style={styles.errText}>{passErr}</Text>
 
        {!disval?
-        <TouchableOpacity style={styles.registerbtn} onPress={registerbtn} disabled={disval}>Register</TouchableOpacity>:
-        <TouchableOpacity style={styles.registerbtndiabled} onPress={registerbtn} disabled={disval}>Register</TouchableOpacity>
+        <Pressable style={styles.registerbtn} onPress={registerbtn} disabled={disval}>Register</Pressable>:
+        <Pressable style={styles.registerbtndiabled} onPress={registerbtn} disabled={disval}>Register</Pressable>
        }
 
         <Text style={styles.navigateheading} onPress={()=>navigation.navigate("Login")}>Already Have an Account?</Text>
@@ -192,8 +192,7 @@ const styles = StyleSheet.create({
   registermaincontainer:
   {
     backgroundColor:"#1B1B1B",
-    width:'100vw',
-    height:'100%'
+    height:'100vh'
   },
   mainheading:
   {
@@ -201,7 +200,7 @@ const styles = StyleSheet.create({
     color:"#4682B4",
     fontWeight:"bold",
     textAlign: "center",
-    marginTop: 120
+    marginTop: 70
   },
   registercard:
   {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { StyleSheet, Text, TextInput, View ,TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, TextInput, View ,Pressable } from 'react-native';
 import axios from 'axios';
 
 const LoginScreen = ({navigation}) => {
@@ -121,13 +121,13 @@ const LoginScreen = ({navigation}) => {
         <Text style={styles.errText}>{emailErr}</Text>
 
         <Text style={styles.inputheading}>Password</Text>
-        <TextInput style={styles.inputbox}
+        <TextInput secureTextEntry={true} style={styles.inputbox}
         placeholder='Enter Password' onChange={(e)=>setPassword(e.target.value)} onBlur={passblur}/>
         <Text style={styles.errText}>{passErr}</Text>
 
         {!disval?
-        <TouchableOpacity style={styles.loginbtn} disabled={disval} onPress={loginbtn}>Login</TouchableOpacity>
-        :<TouchableOpacity style={styles.loginbtndiabled} disabled={disval} onPress={loginbtn}>Login</TouchableOpacity>
+        <Pressable style={styles.loginbtn} disabled={disval} onPress={loginbtn}>Login</Pressable>
+        :<Pressable style={styles.loginbtndiabled} disabled={disval} onPress={loginbtn}>Login</Pressable>
          }
         <Text style={styles.navigateheading} onPress={()=>navigation.navigate("Register")}>New User?</Text>
       
@@ -143,8 +143,7 @@ const styles = StyleSheet.create({
   loginmaincontainer:
   {
     backgroundColor:"#1B1B1B",
-    width:'100vw',
-    height:'100%'
+    height:'100vh'
   },
   mainheading:
   {
@@ -152,7 +151,7 @@ const styles = StyleSheet.create({
     color:"#4682B4",
     fontWeight:"bold",
     textAlign: "center",
-    marginTop: 200
+    marginTop: 70
   },
   logincard:
   {
