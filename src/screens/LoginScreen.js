@@ -71,6 +71,7 @@ const LoginScreen = ({navigation}) => {
        console.log(data.data);
        if(data.data.status===200)
        {
+          window.localStorage.setItem("role",data.data.role);
           navigation.navigate("Home");
        }
       })

@@ -1,7 +1,7 @@
 import { View, Text,StyleSheet, ScrollView,Image, Pressable } from 'react-native';
 import React, { useEffect, useState } from 'react';
-import data from '../api/data.json';
 import { useRoute } from '@react-navigation/native';
+import axios from 'axios';
 
 const CarDetailScreen = ({navigation}) => {
 
@@ -14,44 +14,50 @@ const CarDetailScreen = ({navigation}) => {
   const[mileage,setMileage] = useState([]);
 
 
-  useEffect(()=>{
+  const fetchCarFun  = async()=>{
+    const res = await axios.get("http://localhost:5000/fetchCar");
+
     if(brandame==='Tata')
     {
-        setCarData(data.VEHICLEDATA[0].Tata[carId]);
-        setColor(data.VEHICLEDATA[0].Tata[carId].colour);
-        setMileage(data.VEHICLEDATA[0].Tata[carId].mileages);
+        setCarData(res.data.data[0].Tata[carId]);
+        setColor(res.data.data[0].Tata[carId].colour);
+        setMileage(res.data.data[0].Tata[carId].mileages);
     }
     else if(brandame==='Mahindra')
     {
-        setCarData(data.VEHICLEDATA[0].Mahindra[carId]);
-        setColor(data.VEHICLEDATA[0].Mahindra[carId].colour);
-        setMileage(data.VEHICLEDATA[0].Mahindra[carId].mileages);
+        setCarData(res.data.data[0].Mahindra[carId]);
+        setColor(res.data.data[0].Mahindra[carId].colour);
+        setMileage(res.data.data[0].Mahindra[carId].mileages);
     }
     else if(brandame==="Hyundai")
     {
-        setCarData(data.VEHICLEDATA[0].Hyundai[carId]);
-        setColor(data.VEHICLEDATA[0].Hyundai[carId].colour);
-        setMileage(data.VEHICLEDATA[0].Hyundai[carId].mileages);
+        setCarData(res.data.data[0].Hyundai[carId]);
+        setColor(res.data.data[0].Hyundai[carId].colour);
+        setMileage(res.data.data[0].Hyundai[carId].mileages);
     }
     else if(brandame==="BMW")
     {
-        setCarData(data.VEHICLEDATA[0].BMW[carId]);
-        setColor(data.VEHICLEDATA[0].BMW[carId].colour);
-        setMileage(data.VEHICLEDATA[0].BMW[carId].mileages);
+        setCarData(res.data.data[0].BMW[carId]);
+        setColor(res.data.data[0].BMW[carId].colour);
+        setMileage(res.data.data[0].BMW[carId].mileages);
     }
     else if(brandame==="Suzuki")
     {
-        setCarData(data.VEHICLEDATA[0].Suzuki[carId]);
-        setColor(data.VEHICLEDATA[0].Suzuki[carId].colour);
-        setMileage(data.VEHICLEDATA[0].Suzuki[carId].mileages);
+        setCarData(res.data.data[0].Suzuki[carId]);
+        setColor(res.data.data[0].Suzuki[carId].colour);
+        setMileage(res.data.data[0].Suzuki[carId].mileages);
     }
     else if(brandame==="Toyota")
     {
-        setCarData(data.VEHICLEDATA[0].Toyota[carId]);
-        setColor(data.VEHICLEDATA[0].Toyota[carId].colour);
-        setMileage(data.VEHICLEDATA[0].Toyota[carId].mileages);
+        setCarData(res.data.data[0].Toyota[carId]);
+        setColor(res.data.data[0].Toyota[carId].colour);
+        setMileage(res.data.data[0].Toyota[carId].mileages);
     }
-  },[carData]);
+  };
+
+  useEffect(()=>{
+    fetchCarFun();
+  },[]);
 
   return (
     <>

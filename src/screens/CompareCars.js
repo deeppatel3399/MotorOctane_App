@@ -1,9 +1,9 @@
 import { Text, View ,StyleSheet,Picker,Image, Pressable} from 'react-native';
 import React, { useEffect, useState } from 'react';
-import data from '../api/data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faCodeCompare } from '@fortawesome/free-solid-svg-icons/faCodeCompare';
 import { faHouse} from '@fortawesome/free-solid-svg-icons/faHouse';
+import axios from 'axios';
 
 
 const CompareCars = ({navigation})=>{
@@ -23,56 +23,60 @@ const CompareCars = ({navigation})=>{
         navigation.navigate('CompareCarsDetails',{brandnameone:pickerValOne,brandnametwo:pickerValTwo,idone:carIDOne,idtwo:carIDTwo});
     };
 
-    useEffect(()=>{
+    const fetchCarFun  = async()=>{
+      const res = await axios.get("http://localhost:5000/fetchCar");
       if(pickerValOne==='Tata')
       {
-       setCarOne(data.VEHICLEDATA[0].Tata);
+       setCarOne(res.data.data[0].Tata);
       }
       else if(pickerValOne==="Mahindra")
       {
-        setCarOne(data.VEHICLEDATA[0].Mahindra);
+        setCarOne(res.data.data[0].Mahindra);
       }
       else if(pickerValOne==="Hyundai")
       {
-        setCarOne(data.VEHICLEDATA[0].Hyundai);
+        setCarOne(res.data.data[0].Hyundai);
       }
       else if(pickerValOne==="Toyota")
       {
-        setCarOne(data.VEHICLEDATA[0].Toyota);
+        setCarOne(res.data.data[0].Toyota);
       }
       else if(pickerValOne==="Suzuki")
       {
-        setCarOne(data.VEHICLEDATA[0].Suzuki);
+        setCarOne(res.data.data[0].Suzuki);
       }
       else if(pickerValOne==="BMW")
       {
-        setCarOne(data.VEHICLEDATA[0].BMW);
+        setCarOne(res.data.data[0].BMW);
       }
-      if(pickerValTwo==='Tata')
+      if(pickerValTwo==='')
       {
-       setCarTwo(data.VEHICLEDATA[0].Tata);
+       setCarTwo(res.data.data[0].Tata);
       }
       else if(pickerValTwo==="Mahindra")
       {
-        setCarTwo(data.VEHICLEDATA[0].Mahindra);
+        setCarTwo(res.data.data[0].Mahindra);
       }
       else if(pickerValTwo==="Hyundai")
       {
-        setCarTwo(data.VEHICLEDATA[0].Hyundai);
+        setCarTwo(res.data.data[0].Hyundai);
       }
       else if(pickerValTwo==="Toyota")
       {
-        setCarTwo(data.VEHICLEDATA[0].Toyota);
+        setCarTwo(res.data.data[0].Toyota);
       }
       else if(pickerValTwo==="Suzuki")
       {
-        setCarTwo(data.VEHICLEDATA[0].Suzuki);
+        setCarTwo(res.data.data[0].Suzuki);
       }
       else if(pickerValTwo==="BMW")
       {
-        setCarTwo(data.VEHICLEDATA[0].BMW);
+        setCarTwo(res.data.data[0].BMW);
       }
-
+    };
+  
+    useEffect(()=>{
+      fetchCarFun();
     },[carOne,carTwo,pickerValOne,pickerValTwo]);
 
     return (

@@ -1,7 +1,7 @@
 import { Text, View ,StyleSheet,Image, ScrollView, Pressable} from 'react-native';
 import React, { useEffect, useState } from 'react';
-import data from '../api/data.json';
 import { useRoute } from '@react-navigation/native';
+import axios from 'axios';
 
 const CompareCarsDetails = () => {
 
@@ -18,61 +18,118 @@ const CompareCarsDetails = () => {
   const[carOneData,setCarOneData] = useState([]);
   const[carTwoData,setCarTwoData] = useState([]);
 
-  useEffect(()=>{
-
+  const fetchCarFun  = async()=>{
+    const res = await axios.get("http://localhost:5000/fetchCar");
+     
     if(brandone==='Tata')
     {
-     setCarOneData(data.VEHICLEDATA[0].Tata[idOne]);
+     setCarOneData(res.data.data[0].Tata[idOne]);
     }
     else if(brandone==="Mahindra")
     {
-      setCarOneData(data.VEHICLEDATA[0].Mahindra[idOne]);
+      setCarOneData(res.data.data[0].Mahindra[idOne]);
     }
     else if(brandone==="Hyundai")
     {
-      setCarOneData(data.VEHICLEDATA[0].Hyundai[idOne]);
+      setCarOneData(res.data.data[0].Hyundai[idOne]);
     }
     else if(brandone==="Toyota")
     {
-      setCarOneData(data.VEHICLEDATA[0].Toyota[idOne]);
+      setCarOneData(res.data.data[0].Toyota[idOne]);
     }
     else if(brandone==="Suzuki")
     {
-      setCarOneData(data.VEHICLEDATA[0].Suzuki[idOne]);
+      setCarOneData(res.data.data[0].Suzuki[idOne]);
     }
     else if(brandone==="BMW")
     {
-      setCarOneData(data.VEHICLEDATA[0].BMW[idOne]);
+      setCarOneData(res.data.data[0].BMW[idOne]);
     }
     if(brandtwo==='Tata')
     {
-     setCarTwoData(data.VEHICLEDATA[0].Tata[idTwo]);
+     setCarTwoData(res.data.data[0].Tata[idTwo]);
     }
     else if(brandtwo==="Mahindra")
     {
-      setCarTwoData(data.VEHICLEDATA[0].Mahindra[idTwo]);
+      setCarTwoData(res.data.data[0].Mahindra[idTwo]);
     }
     else if(brandtwo==="Hyundai")
     {
-      setCarTwoData(data.VEHICLEDATA[0].Hyundai[idTwo]);
+      setCarTwoData(res.data.data[0].Hyundai[idTwo]);
     }
     else if(brandtwo==="Toyota")
     {
-      setCarTwoData(data.VEHICLEDATA[0].Toyota[idTwo]);
+      setCarTwoData(res.data.data[0].Toyota[idTwo]);
     }
     else if(brandtwo==="Suzuki")
     {
-      setCarTwoData(data.VEHICLEDATA[0].Suzuki[idTwo]);
+      setCarTwoData(res.data.data[0].Suzuki[idTwo]);
     }
     else if(brandtwo==="BMW")
     {
-      setCarTwoData(data.VEHICLEDATA[0].BMW[idTwo]);
+      setCarTwoData(res.data.data[0].BMW[idTwo]);
     }
+    // setCarData(res.data.data[0].Tata);
+  };
 
+  useEffect(()=>{
+    fetchCarFun();
   },[carOneData,carTwoData]);
 
-  console.log(carOneData);
-  console.log(carTwoData);
+  // useEffect(()=>{
+
+  //   if(brandone==='Tata')
+  //   {
+  //    setCarOneData(data.VEHICLEDATA[0].Tata[idOne]);
+  //   }
+  //   else if(brandone==="Mahindra")
+  //   {
+  //     setCarOneData(data.VEHICLEDATA[0].Mahindra[idOne]);
+  //   }
+  //   else if(brandone==="Hyundai")
+  //   {
+  //     setCarOneData(data.VEHICLEDATA[0].Hyundai[idOne]);
+  //   }
+  //   else if(brandone==="Toyota")
+  //   {
+  //     setCarOneData(data.VEHICLEDATA[0].Toyota[idOne]);
+  //   }
+  //   else if(brandone==="Suzuki")
+  //   {
+  //     setCarOneData(data.VEHICLEDATA[0].Suzuki[idOne]);
+  //   }
+  //   else if(brandone==="BMW")
+  //   {
+  //     setCarOneData(data.VEHICLEDATA[0].BMW[idOne]);
+  //   }
+  //   if(brandtwo==='Tata')
+  //   {
+  //    setCarTwoData(data.VEHICLEDATA[0].Tata[idTwo]);
+  //   }
+  //   else if(brandtwo==="Mahindra")
+  //   {
+  //     setCarTwoData(data.VEHICLEDATA[0].Mahindra[idTwo]);
+  //   }
+  //   else if(brandtwo==="Hyundai")
+  //   {
+  //     setCarTwoData(data.VEHICLEDATA[0].Hyundai[idTwo]);
+  //   }
+  //   else if(brandtwo==="Toyota")
+  //   {
+  //     setCarTwoData(data.VEHICLEDATA[0].Toyota[idTwo]);
+  //   }
+  //   else if(brandtwo==="Suzuki")
+  //   {
+  //     setCarTwoData(data.VEHICLEDATA[0].Suzuki[idTwo]);
+  //   }
+  //   else if(brandtwo==="BMW")
+  //   {
+  //     setCarTwoData(data.VEHICLEDATA[0].BMW[idTwo]);
+  //   }
+
+  // },[carOneData,carTwoData]);
+
+
 
   return (
     <>

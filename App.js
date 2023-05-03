@@ -6,6 +6,7 @@ import HomeScreen from './src/screens/HomeScreen.js';
 import CarDetailScreen from './src/screens/CarDetailScreen.js';
 import CompareCars from './src/screens/CompareCars.js';
 import CompareCarsDetails from './src/screens/CompareCarsDetails.js';
+import AddCar from './src/screens/AddCar.js';
 import GetAssistant from './src/screens/GetAssistant.js';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -27,6 +28,7 @@ const App = () =>{
         <Stack.Screen name='CompareCars' component={CompareCars}/>
         <Stack.Screen name='CompareCarsDetails' component={CompareCarsDetails}/>
         <Stack.Screen name='Get' component={GetAssistant}/>
+        <Stack.Screen name='AddCar' component={AddCar}/>
       </Stack.Navigator>
 
     </NavigationContainer>

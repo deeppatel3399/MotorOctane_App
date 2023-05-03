@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/carAppUser",{
+const uri = "mongodb+srv://avi1234:Avi%401234@cluster0.ucyako4.mongodb.net/?retryWrites=true&w=majority";
+
+mongoose.connect(uri,{
     useNewUrlParser: true,
 }).then(()=>{
 

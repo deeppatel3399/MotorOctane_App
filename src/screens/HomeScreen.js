@@ -1,15 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import data from '../api/data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faCodeCompare } from '@fortawesome/free-solid-svg-icons/faCodeCompare';
 import { faHouse} from '@fortawesome/free-solid-svg-icons/faHouse';
+import {faPlus} from '@fortawesome/free-solid-svg-icons/faPlus';
+import axios from 'axios';
 
 const HomeScreen = ({navigation}) =>{
 
-  const[carData,setCarData] = useState(data.VEHICLEDATA[0].Tata);
+  const role = window.localStorage.getItem("role");
+
+  const[carData,setCarData] = useState([]);
   const[brandName,setBrandName] = useState('Tata');
+
+  const fetchCarFun  = async()=>{
+    const res = await axios.get("http://localhost:5000/fetchCar");
+
+    setCarData(res.data.data[0].Tata);
+  };
+
+  useEffect(()=>{
+    fetchCarFun();
+  },[]);
 
   return (
     <>
@@ -113,6 +127,9 @@ const HomeScreen = ({navigation}) =>{
       <View style={styles.bottomtab}>
           <View style={styles.tabstyle}>
           <Pressable onPress={()=>{navigation.navigate("Home")}}><View><Text style={styles.linkstyle}><FontAwesomeIcon icon={ faHouse } style={styles.iconstyle} size={30}/></Text></View></Pressable>
+          {role==="A"?
+          <Pressable onPress={()=>{navigation.navigate("AddCar")}}><View><Text style={styles.linkstyle}><FontAwesomeIcon icon={faPlus} size={30}/></Text></View></Pressable>
+          :null}
           <Pressable onPress={()=>{navigation.navigate("CompareCars")}}><View><Text style={styles.linkstyle}><FontAwesomeIcon icon={ faCodeCompare } size={30}/></Text></View></Pressable>
           </View>
       </View>
